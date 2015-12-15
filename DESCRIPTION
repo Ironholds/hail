@@ -1,12 +1,15 @@
 Package: hail
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1
+Title: Read HYDRA Rainfall Data
+Version: 0.1.0
 Date: 2015-12-13
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Oliver Keyes
+Maintainer: Oliver Keyes <ironholds@gmail.com>
+Description: Read data from the City of Portland's 'HYDRA' (http://or.water.usgs.gov/precip/) rainfall datasets within R.
+License: MIT + file LICENSE
 LazyData: TRUE
-Suggests: 
+Suggests:
     testthat
+URL: https://github.com/ironholds/hail
+BugReports: https://github.com/ironholds/hail/issues
+
