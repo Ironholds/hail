@@ -18,9 +18,9 @@ hydra_base <- function(url, station){
 
   # Munge it
   data <- gsub(x = data[12:length(data)], pattern = " {1,}", perl = TRUE, replacement = "\t")
-  data <- read.delim(text = data, header = FALSE, stringsAsFactors = FALSE,
-                     col.names = c("date", "daily_total", paste("hour", seq(0,23,1), sep = "_")),
-                     na.strings = c("-", "", "NA"))
+  data <- utils::read.delim(text = data, header = FALSE, stringsAsFactors = FALSE,
+                            col.names = c("date", "daily_total", paste("hour", seq(0,23,1), sep = "_")),
+                            na.strings = c("-", "", "NA"))
 
   data$date <- as.Date(data$date, format = "%d-%B-%Y")
 
