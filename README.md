@@ -9,7 +9,7 @@ Retrieves rainfall data from the City of Portland's "HYDRA" monitoring stations.
 ## Installation
 
 ```r
-devtools::install_github("ironholds/hail")
+install.packages("hail")
 ```
 
 ## Usage
